@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700;900&display=swap');
+
+*,
+*::after,
+*:before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #ECF0F1;
+  font-family: "Poppins", sans-serif;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+}
+
+.card {
+  box-shadow: 0 2px 1rem rgba(0, 0, 0, .2);
+  border-radius: 1rem;
+  overflow: hidden;
+  width: 35rem;
+
+  &__header {
+    height: 20rem;
+
+    & img {
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  &__content {
+    background-color: #FFF;
+    padding: 3rem;
+  }
+
+  &__title {
+    height: 2rem;
+  }
+
+  &__excerpt {
+    color: #777;
+    margin: 1rem 0 2rem;
+  }
+}
+
+.author {
+  display: flex;
+  gap: 1rem;
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    & small {
+      color: #AAA;
+      margin-top: .5rem;
+    }
+  }
+}
+
+.profile-img {
+  border-radius: 50%;
+  overflow: hidden;
+  height: 4rem;
+  width: 4rem;
+}
+
+.animated-bg {
+  background-image: linear-gradient(to right, #F6F7F8 0%, #EDEEF1 10%, #F6F7F8 20%, #F6F7F8 100%);
+  background-size: 200% 100%;
+  animation: bgPos 1s linear infinite;
+
+  &__text {
+    border-radius: 5rem;
+    display: inline-block;
+    height: 1rem;
+    width: 100%;
+  }
+}
+
+@keyframes bgPos {
+  0% {
+    background-position: 50% 0;
+  }
+
+  100% {
+    background-position: -150% 0;
+  }
+}

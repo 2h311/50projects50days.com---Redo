@@ -1,0 +1,41 @@
+@media only screen and (max-width: 60em) {
+  .showcase h1 {
+    font-size: 3rem;
+  }
+
+  .projects {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (max-width: 43.75em) {
+  .showcase h1 {
+    font-size: 2rem;
+  }
+
+  .logo {
+    width: 5rem;
+  }
+
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 31.25em) {
+  .projects {
+    grid-template-columns: 1fr;
+  }
+
+  .main-footer ul {
+    display: none;
+  }
+
+  .about-a {
+    grid-template-columns: 1fr;
+
+    & .repo {
+      height: 10rem;
+    }
+  }
+}
